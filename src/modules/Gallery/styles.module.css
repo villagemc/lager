@@ -1,0 +1,30 @@
+.flex {
+  gap: clamp(35px, 7vw, 70px);
+}
+
+.list, .block {
+  gap: clamp(10px, 2vw, 20px);
+  flex-shrink: 0;
+}
+
+.arrow {
+  margin: -10px 0 0 20px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0 8px;
+  border: 2px solid var(--color-black);
+  line-height: .5;
+  font-size: 30px;
+}
+
+.block {
+  width: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.image {
+  border-radius: 20px;
+  max-height: clamp(220px, 50vw, 320px);
+  min-height: clamp(220px, 50vw, 320px);
+}

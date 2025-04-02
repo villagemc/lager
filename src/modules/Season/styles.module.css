@@ -1,0 +1,63 @@
+@keyframes subtitleAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: clamp(8px, 2.5vw, 14px);
+}
+
+.subtitle, .subtitle_active {
+  margin: 0 auto;
+  max-width: 842px;
+  font-weight: 400;
+  font-size: clamp(12px, 3vw, 28px);
+  color: rgba(var(--black), 0.6);
+  text-align: center;
+}
+
+.subtitle_active {
+  animation: subtitleAnimation .5s ease forwards;
+}
+
+.seasons {
+  padding: clamp(14px, 3.5vw, 28px) 0 clamp(24px, 5.5vw, 72px);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cards {
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .cards {
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+.sliders {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .sliders {
+    padding: 12px 20px 0;
+    display: flex;
+  }
+}

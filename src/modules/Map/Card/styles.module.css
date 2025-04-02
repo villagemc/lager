@@ -1,0 +1,25 @@
+.card {
+  padding: clamp(12px, 2vw, 17px) clamp(12px, 2vw, 20px);
+  background-color: var(--color-feil);
+  border-radius: 14px;
+}
+
+.name {
+  color: rgba(var(--black), 0.65);
+  font-size: clamp(12px, 2vw, 14px);
+  font-weight: 400;
+}
+
+.description {
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 400;
+  letter-spacing: 0.54px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.button {
+  background-color: rgba(var(--green), .1) !important;
+}

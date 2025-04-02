@@ -1,0 +1,58 @@
+.collapse {
+  font-weight: 800;
+  font-size: clamp(16px, 2vw, 18px);
+  color: var(--color-green);
+}
+
+.icon, .rotate {
+  font-weight: 800 !important;
+  font-size: clamp(20px, 5vw, 32px) !important;
+  color: var(--color-green) !important;
+  transition: all .2s ease !important;
+}
+
+.header {
+  border-radius: clamp(14px, 4.5vw, 24px) !important;
+  background-color: var(--color-feil);
+}
+
+.body {
+  border: none !important;
+}
+
+.rotate {
+  rotate: 45deg !important;
+}
+
+.text {
+  margin: 8px -16px -16px -16px;
+  padding: 16px 16px 16px 16px;
+  background-color: rgba(var(--green), .05);
+  color: var(--color-green);
+  font-weight: 400;
+  font-size: clamp(14px, 4.5vw, 18px);
+  white-space: pre-wrap;
+  border-radius: clamp(14px, 4.5vw, 24px);
+}
+
+.flex {
+  gap: clamp(24px, 5.5vw, 42px);
+}
+
+.collapses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: transparent;
+  align-items: flex-start;
+}
+
+.ant-collapse-content-box {
+  background: red !important;
+}
+
+@media screen and (max-width: 992px) {
+  .collapses {
+    grid-template-columns: 1fr;
+  }
+}

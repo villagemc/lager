@@ -1,0 +1,6 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: clamp(16px, 4vw, 28px) 0 clamp(24px, 6vw, 44px);
+}

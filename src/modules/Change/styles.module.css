@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+}
+
+.flex {
+  padding: clamp(14px, 3.5vw, 28px) 0 clamp(28px, 7vw, 42px);
+}
+
+.flex_month {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 4vw, 28px);
+}

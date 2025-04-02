@@ -1,0 +1,22 @@
+@keyframes titleAnimation {
+  0% {
+    margin-left: 50px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.title, .title_active {
+  color: rgba(var(--black), .73);
+  font-size: clamp(28px, 7vw, 44px);
+  font-weight: 800;
+}
+
+.title_active {
+  animation: titleAnimation .5s linear forwards;
+}

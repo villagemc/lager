@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-main: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --font-nunito: 'Nunito', var(--font-main);
+  --font-onest: 'Onest', var(--font-main);
+
+  --green: 9, 164, 81;
+  --color-green: rgb(var(--green));
+  --color-green-hover: rgba(var(--green), 0.2);
+
+  --bluz: 2, 147, 114;
+  --color-bluz: rgb(var(--bluz));
+
+  --white: 255, 255, 255;
+  --color-white: rgb(var(--white));
+
+  --black: 22, 22, 22;
+  --color-black: rgb(var(--black));
+
+  --yellow: 246, 196, 3;
+  --color-yellow: rgb(var(--yellow));
+
+  --feil: 248, 248, 248;
+  --color-feil: rgb(var(--feil));
+
+  --padding: 160px;
+  --main-gap: clamp(90px, 17vw, 200px);
+  --about-radius: clamp(29px, 7vw, 50px)
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --padding: 90px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  :root {
+    --padding: 75px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  :root {
+    --padding: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --padding: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --padding: 20px;
+  }
+}
+
+span:not(:has(*)) {
+  font-family: var(--font-onest) !important;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-nunito);
+}
+
+button {
+  box-shadow: none !important;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+ul, li {
+  list-style-type: none;
+}

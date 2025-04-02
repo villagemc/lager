@@ -1,0 +1,36 @@
+.card {
+  padding-block: clamp(16px, 4vw, 28px);
+  padding-inline: clamp(16px, 4vw, 34px);
+  background-color: var(--color-white);
+  border-radius: clamp(23px, 5vw, 58px);
+}
+
+.card:nth-child(odd)>.title {
+  background-color: var(--color-green);
+}
+
+.card:nth-child(even)>.title {
+  background-color: var(--color-yellow);
+}
+
+.title {
+  border-radius: 30px;
+  padding-block: clamp(8px, 2vw, 16px);
+  padding-inline: clamp(12px, 2.5vw, 24px);
+  align-self: flex-start;
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  opacity: .7;
+  white-space: pre-wrap;
+  font-size: clamp(12px, 2.5vw, 18px);
+}

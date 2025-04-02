@@ -1,0 +1,21 @@
+@keyframes animate {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
+
+.animate, .animate_active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animate_active {
+  animation: animate .2s linear forwards;
+}

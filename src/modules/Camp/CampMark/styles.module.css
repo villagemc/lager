@@ -1,0 +1,24 @@
+.mark {
+  padding: 14px;
+  background-color: rgba(var(--green), .11);
+  color: var(--color-green);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 20px;
+}
+
+.desc {
+  font-size: clamp(13px, 3vw, 18px) !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: clamp(20px, 5vw, 38px);
+  min-width: clamp(20px, 5vw, 38px);
+  aspect-ratio: 1/1;
+}

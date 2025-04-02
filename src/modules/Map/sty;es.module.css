@@ -1,0 +1,50 @@
+.content {
+  display: grid;
+  gap: clamp(24px, 2vw, 48px);
+  align-items: flex-start;
+  grid-template-columns: .3fr .7fr;
+  grid-template-areas:
+    'a b b'
+    'c b b'
+  ;
+}
+
+@media screen and (max-width: 1900px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+    ;
+  }
+}
+
+.title {
+  line-height: 1;
+}
+
+.flex {
+  grid-area: a;
+}
+
+.frame {
+  width: 100%;
+  grid-area: b;
+  border: none;
+  border-radius: clamp(18px, 4vw, 34px);
+  height: clamp(370px, 92vw, 497px);
+}
+
+.image {
+  aspect-ratio: 1/1;
+  width: clamp(62px, 10vw, 86px);
+}
+
+.cards {
+  align-self: flex-end;
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vw, 24px);
+}

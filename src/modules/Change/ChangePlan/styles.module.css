@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 4vw, 28px);
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .months {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  padding-block: clamp(20px, 4vw, 64px);
+  padding-inline: clamp(20px, 4vw, 100px);
+  background-color: var(--color-yellow);
+  border-radius: clamp(18px, 4vw, 60px);
+  background-image: url(../../images/banner/stars.svg);
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: clamp(21px, 3vw, 43px);
+  font-weight: 800;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    justify-content: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .book {
+    display: none;
+  }
+}

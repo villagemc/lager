@@ -1,0 +1,61 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-green);
+  z-index: 1;
+  padding-top: clamp(95px, 20vw, 295px);
+  padding-bottom: clamp(25px, 4vw, 222px);
+  border-radius: clamp(24px, 4vw, 100px);
+}
+
+.overlay {
+  position: absolute;
+  top: clamp(48px, 9vw, 295px);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  width: 100%;
+  height: clamp(148px, 30vw, 258px);
+  border-radius: 456px;
+  opacity: 0.5;
+  background: var(--color-white);
+  filter: blur(250px);
+  z-index: -2;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.flex {
+  padding-bottom: clamp(44px, 8vw, 135px);
+}
+
+.content, .title, .subtitle {
+  color: var(--color-white);
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  color: rgba(var(--white), .7) !important;
+  max-width: 800px;
+  font-size: clamp(14px, 3vw, 20px);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
