@@ -15,6 +15,16 @@
   text-transform: uppercase;
 }
 
+.button {
+  width: clamp(206px, 16vw, 246px);
+  height: clamp(50px, 4vw, 70px);
+  color: var(--color-white);
+  font-family: var(--font-nunito) !important;
+  font-size: clamp(16px, 1.25vw, 24px) !important;
+  font-style: normal;
+  font-weight: 800;
+}
+
 @media screen and (max-width: 992px) {
   .flex {
     justify-content: center;

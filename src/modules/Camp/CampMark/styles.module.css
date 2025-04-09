@@ -19,6 +19,6 @@
   display: flex;
   align-items: center;
   font-size: clamp(20px, 5vw, 38px);
-  min-width: clamp(20px, 5vw, 38px);
+  width: clamp(20px, 5vw, 38px);
   aspect-ratio: 1/1;
 }

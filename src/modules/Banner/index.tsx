@@ -15,7 +15,7 @@ export default function Banner() {
           <Flex className={styles.flex} gap={28} align="center" justify="space-between">
             <h4 className={styles.title}>{t('PUSH_BOOK')}</h4>
             <div className={styles.book}>
-              <Book />
+              <Book buttonClassName={styles.button} />
             </div>
           </Flex>
         </div>

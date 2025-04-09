@@ -1,0 +1,7 @@
+.button {
+  color: rgba(var(--black), 0.73);
+  font-family: var(--font-nunito);
+  font-size: clamp(12px, 2.5vw, 18px);
+  font-style: normal;
+  font-weight: 800;
+}

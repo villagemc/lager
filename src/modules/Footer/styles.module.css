@@ -22,6 +22,7 @@
   left: 0;
   z-index: -1;
   max-width: 550px;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -35,6 +36,7 @@
 }
 
 .logo {
+  pointer-events: none;
   max-width: clamp(120px, 25vw, 208px);
 }
 
@@ -44,7 +46,7 @@
 }
 
 .sections {
-  gap: clamp(32px, 7vw, 128px);
+  gap: clamp(32px, 7vw, 168px);
 }
 
 .name {

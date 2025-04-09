@@ -21,6 +21,7 @@ export default function CampButton({ camp, activeId, onSetActiveId }: CampButton
       color={activeId === camp.id ? "green" : "default"}
       variant={activeId === camp.id ? "solid" : "filled"}
       onClick={() => onSetActiveId(camp.id)}
+      shape="round"
     >
       <Trans>{camp.item}</Trans>
     </Button>

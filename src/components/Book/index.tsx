@@ -10,7 +10,11 @@ const { Title, Text } = Typography
 
 const { useBreakpoint } = Grid
 
-export default function Book() {
+interface BookProps {
+  buttonClassName?: string
+}
+
+export default function Book({ buttonClassName }: BookProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const { sm } = useBreakpoint()
@@ -20,8 +24,10 @@ export default function Book() {
 
   return (
     <Fragment>
-      <Button color="green" shape="round" variant="solid" onClick={onOpen} size="large">
-        <Trans>SUBMIT_BOOK</Trans>
+      <Button className={buttonClassName} color="green" shape="round" variant="solid" onClick={onOpen} size="large">
+        <span className={styles.button}>
+          <Trans>SUBMIT_BOOK</Trans>
+        </span>
       </Button>
       <Modal centered open={isOpen} footer={null} onCancel={onClose}>
         <Title level={sm ? 1 : 2}>

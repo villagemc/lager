@@ -15,6 +15,10 @@ export default function Camp() {
 
   const onSetActiveId = (id: number) => setActiveId(id)
 
+  const onAddActiveId = () => {
+    setActiveId((activeId % CAMPS.length) + 1)
+  }
+
   return (
     <Section id="camp">
       <Container>
@@ -37,6 +41,7 @@ export default function Camp() {
               key={camp.id}
               camp={camp}
               activeId={activeId}
+              onAddActiveId={onAddActiveId}
             />
           ))}
         </ul>

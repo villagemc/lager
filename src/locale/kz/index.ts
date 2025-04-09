@@ -1,6 +1,8 @@
 import { TransType } from "@/locale/ru"
 
 export const kz: TransType = {
+  DOCS_PUBLIC: "Жалпы ұсыныс",
+  
   MORE: 'Толығырақ',
   MIN_MORE: 'Жию',
 

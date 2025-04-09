@@ -25,7 +25,7 @@ export default function Map() {
         <iframe
           allowFullScreen
           className={styles.frame}
-          src="http://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A52.95691159357149%2C%22lon%22%3A70.38472652435304%2C%22zoom%22%3A15%7D%2C%22opt%22%3A%7B%22city%22%3A%22kokshetau%22%7D%2C%22org%22%3A%2270000001065305183%22%7D"
+          src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A52.95691159357149%2C%22lon%22%3A70.38472652435304%2C%22zoom%22%3A15%7D%2C%22opt%22%3A%7B%22city%22%3A%22kokshetau%22%7D%2C%22org%22%3A%2270000001065305183%22%7D"
           height="100%"
           width="100%"
         />

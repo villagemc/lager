@@ -1,10 +1,10 @@
 import { CampStruct } from "./types"
-import { FaSmile } from "react-icons/fa"
-import { IoIosTime } from "react-icons/io"
 import Image1 from "@/images/camp/image1.png"
 import Image2 from "@/images/camp/image2.png"
 import Image3 from "@/images/camp/image3.png"
 import Image4 from "@/images/camp/image4.png"
+import SVG1 from "@/images/smile/one.svg"
+import SVG2 from "@/images/smile/two.svg"
 
 export const CAMPS: CampStruct[] = [
   {
@@ -14,8 +14,8 @@ export const CAMPS: CampStruct[] = [
     description: 'CAMP_DESCRIPTION_1',
     image: Image1,
     marks: [
-      { id: 1, mark: 'CAMP_PUNKT_1_1', icon: FaSmile },
-      { id: 2, mark: 'CAMP_PUNKT_1_2', icon: IoIosTime },
+      { id: 1, mark: 'CAMP_PUNKT_1_1', icon: SVG1 },
+      { id: 2, mark: 'CAMP_PUNKT_1_2', icon: SVG2 },
     ]
   },
   {
@@ -25,8 +25,8 @@ export const CAMPS: CampStruct[] = [
     description: 'CAMP_DESCRIPTION_2',
     image: Image2,
     marks: [
-      { id: 1, mark: 'CAMP_PUNKT_2_1', icon: FaSmile },
-      { id: 2, mark: 'CAMP_PUNKT_2_2', icon: IoIosTime },
+      { id: 1, mark: 'CAMP_PUNKT_2_1', icon: SVG1 },
+      { id: 2, mark: 'CAMP_PUNKT_2_2', icon: SVG2 },
     ]
   },
   {
@@ -36,8 +36,8 @@ export const CAMPS: CampStruct[] = [
     description: 'CAMP_DESCRIPTION_3',
     image: Image3,
     marks: [
-      { id: 1, mark: 'CAMP_PUNKT_3_1', icon: FaSmile },
-      { id: 2, mark: 'CAMP_PUNKT_3_2', icon: IoIosTime },
+      { id: 1, mark: 'CAMP_PUNKT_3_1', icon: SVG1 },
+      { id: 2, mark: 'CAMP_PUNKT_3_2', icon: SVG2 },
     ]
   },
   {
@@ -47,8 +47,8 @@ export const CAMPS: CampStruct[] = [
     description: 'CAMP_DESCRIPTION_4',
     image: Image4,
     marks: [
-      { id: 1, mark: 'CAMP_PUNKT_4_1', icon: FaSmile },
-      { id: 2, mark: 'CAMP_PUNKT_4_2', icon: IoIosTime },
+      { id: 1, mark: 'CAMP_PUNKT_4_1', icon: SVG1 },
+      { id: 2, mark: 'CAMP_PUNKT_4_2', icon: SVG2 },
     ]
   },
   // {

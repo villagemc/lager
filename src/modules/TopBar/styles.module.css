@@ -24,13 +24,8 @@
   border-radius: 43px;
 }
 
-.logo__image {
-  aspect-ratio: 1/1;
-}
-
-.logo__name {
-  margin: auto 0;
-  min-width: 87px;
-  color: var(--color-bluz);
-  line-height: 1.2;
+.logo {
+  display: block;
+  min-width: clamp(120px, 10vw, 132px);
+  width: 100%;
 }

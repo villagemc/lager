@@ -1,5 +1,7 @@
 /** Primary language of use */
 const ru = {
+  DOCS_PUBLIC: "Публичная оферта",
+
   MORE: 'Подробнее',
   MIN_MORE: 'Свернуть',
 

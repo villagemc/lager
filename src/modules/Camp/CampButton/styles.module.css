@@ -14,6 +14,7 @@
 .button, .button_active {
   opacity: 0;
   visibility: hidden;
+  padding: clamp(12px, 2vw, 20px) clamp(13px, 2vw, 40px) !important;
 }
 
 .button_active {

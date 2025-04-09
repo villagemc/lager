@@ -1,9 +1,7 @@
-import { IconType } from "react-icons"
-
 export interface CampMarkStruct {
   id: number
   mark: string
-  icon?: IconType
+  icon?: string
 }
 
 export interface CampStruct {

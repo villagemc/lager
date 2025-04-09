@@ -49,11 +49,16 @@
 }
 
 .image {
-  pointer-events: none;
   animation: textAnimation 1.5s ease forwards !important;
   position: absolute;
   aspect-ratio: 1/1;
   padding: 2px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.image:hover {
+  translate: 0 -10px;
 }
 
 .image:nth-child(2) {
@@ -105,6 +110,10 @@
 @media screen and (max-width: 576px) {
   .image {
     display: block;
+  }
+
+  .image:hover {
+    translate: 0;
   }
 
   .flex {

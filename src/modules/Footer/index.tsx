@@ -57,6 +57,7 @@ export default function Footer() {
                 <Flex className={styles.buttons} vertical gap={20}>
                   {CONTACTS.map((contact) => (
                     <Button
+                      key={contact.id}
                       type="link"
                       size="large"
                       color="default"
@@ -76,7 +77,7 @@ export default function Footer() {
             <Marquee pauseOnHover speed={75} gradient={false}>
               <Flex className={styles.gap} align="center">
                 {TRACKS.map((track) => (
-                  <Fragment>
+                  <Fragment key={track.id}>
                     <span className={styles.text} key={track.id}>{t(track.name)}</span>
                     <span className={styles.text}>•</span>
                   </Fragment>
@@ -84,7 +85,7 @@ export default function Footer() {
               </Flex>
               <Flex className={styles.gap} align="center">
                 {TRACKS.map((track) => (
-                  <Fragment>
+                  <Fragment key={track.id}>
                     <span className={styles.text} key={track.id}>{t(track.name)}</span>
                     <span className={styles.text}>•</span>
                   </Fragment>

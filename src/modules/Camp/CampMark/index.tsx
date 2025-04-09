@@ -1,4 +1,4 @@
-import { Trans } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 import { CampMarkStruct } from "@/utils/sections/camps/types"
 import styles from "./styles.module.css"
 
@@ -7,11 +7,11 @@ interface CampMarkProps {
 }
 
 export default function CampMark({ mark }: CampMarkProps) {
-  const ComponentIcon = mark.icon
+  const { t } = useTranslation()
 
   return (
     <div className={styles.mark}>
-      {ComponentIcon && <ComponentIcon className={styles.icon} />}
+      {mark.icon && <img className={styles.icon} src={mark.icon} alt={t('IMAGE_ALT')} />}
       <span className={styles.desc}>
         <Trans>{mark.mark}</Trans>
       </span>

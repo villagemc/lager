@@ -1,9 +1,6 @@
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  position: sticky;
-  top: 0;
-  left: 0;
   transition: transform .3s linear;
   z-index: 1;
 }

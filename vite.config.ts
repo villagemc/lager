@@ -16,5 +16,11 @@ export default defineConfig({
         autoprefixer({ overrideBrowserslist: ['> 0%'] })
       ]
     }
+  },
+  base: '/lager/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true
   }
 })

@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes cardWidth {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: calc(100% - 2 * 40px);
+  }
+}
+
 .card {
   position: relative;
   display: grid;
@@ -24,14 +33,13 @@
   }
 }
 
-.card::before {
-  content: '';
+.card_line {
   position: absolute;
   left: 40px;
   bottom: 0;
   height: 3px;
   width: 100%;
-  max-width: max(30%, 200px);
+  animation: cardWidth 10s linear forwards;
   border-radius: 0 0 0 inherit;
   border-bottom: 3px solid var(--color-green);
 }

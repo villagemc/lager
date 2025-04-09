@@ -1,4 +1,5 @@
 .collapse {
+  font-family: var(--font-onest) !important;
   font-weight: 800;
   font-size: clamp(16px, 2vw, 18px);
   color: var(--color-green);
@@ -29,6 +30,7 @@
   padding: 16px 16px 16px 16px;
   background-color: rgba(var(--green), .05);
   color: var(--color-green);
+  font-family: var(--font-nunito) !important;
   font-weight: 400;
   font-size: clamp(14px, 4.5vw, 18px);
   white-space: pre-wrap;
@@ -39,20 +41,20 @@
   gap: clamp(24px, 5.5vw, 42px);
 }
 
-.collapses {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.collapses {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
   background: transparent;
-  align-items: flex-start;
 }
 
 .ant-collapse-content-box {
   background: red !important;
-}
-
-@media screen and (max-width: 992px) {
-  .collapses {
-    grid-template-columns: 1fr;
-  }
 }
