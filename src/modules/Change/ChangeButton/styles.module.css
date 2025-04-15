@@ -4,6 +4,7 @@
     visibility: hidden;
     scale: .9;
   }
+
   100% {
     opacity: 1;
     visibility: visible;
@@ -13,4 +14,18 @@
 
 .animate {
   animation: buttonAnimation .3s ease-in-out forwards;
+}
+
+.button {
+  font-family: var(--font-nunito);
+  text-align: center;
+  font-size: clamp(12px, 2.5vw, 22px);
+  font-style: normal;
+  font-weight: 700;
+  min-width: clamp(170px, 40vw, 194px);
+  height: clamp(38px, 8vw, 56px);
+}
+
+.button > span {
+  opacity: .8 !important;
 }

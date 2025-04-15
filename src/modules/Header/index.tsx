@@ -26,7 +26,7 @@ export default function Header() {
           <Text className={styles.subtitle}>
             <Trans>HOME_SUBTITLE</Trans>
           </Text>
-          {sm && <Book />}
+          {sm && <Book buttonClassName={styles.button} />}
         </Flex>
         <img src={Image1} className={styles.image} alt={t('IMAGE_ALT')} />
         <img src={Image2} className={styles.image} alt={t('IMAGE_ALT')} />

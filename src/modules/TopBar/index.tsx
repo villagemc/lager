@@ -28,12 +28,12 @@ export default function TopBar() {
           <Col flex="auto">
             {lg && <Navigations mode="horizontal" />}
           </Col>
-          <Col flex="none">
+          <Col flex="none" style={{ padding: 0 }}>
             <Language />
           </Col>
           {lg && (
             <Col flex="none">
-              <Book />
+              <Book buttonClassName={styles.button} />
             </Col>
           )}
           {!lg && (

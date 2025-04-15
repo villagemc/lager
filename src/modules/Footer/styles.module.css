@@ -42,11 +42,13 @@
 
 .title {
   font-size: clamp(36px, 7vw, 64px);
+  line-height: 1.2 !important;
+  font-weight: 800;
   text-align: center;
 }
 
 .sections {
-  gap: clamp(32px, 7vw, 168px);
+  gap: clamp(32px, 7vw, 128px);
 }
 
 .name {
@@ -55,10 +57,12 @@
 }
 
 .button {
-  width: 180px;
-  height: 50px;
+  width: 196px;
+  height: clamp(48px, 10vw, 60px);
   color: var(--color-white);
+  border-radius: clamp(13px, 2.5vw, 20px) !important;
   background-color: rgba(var(--white), .05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.54) !important;
 }
 
 .button:hover {
@@ -66,6 +70,7 @@
 }
 
 .link {
+  font-family: var(--font-onest) !important;
   color: rgba(var(--white), .7) !important;
   font-size: clamp(16px, 4vw, 22px);
   font-style: normal;
@@ -89,7 +94,7 @@
 }
 
 .text {
-  font-family: Nunito;
+  font-family: var(--font-nunito) !important;
   font-size: clamp(16px, 4vw, 22px);
   font-style: normal;
   font-weight: 400;
@@ -115,6 +120,7 @@
 
 .end_link {
   margin-left: auto;
+  font-family: Onest;
 }
 
 @media screen and (max-width: 1200px) {

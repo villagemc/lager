@@ -17,10 +17,10 @@ export default defineConfig({
       ]
     }
   },
-  base: '/lager/',
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
-  }
+  // base: '/lager/',
+  // build: {
+  //   outDir: 'dist',
+  //   assetsDir: 'assets',
+  //   emptyOutDir: true
+  // }
 })

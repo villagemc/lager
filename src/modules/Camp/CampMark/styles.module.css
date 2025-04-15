@@ -10,6 +10,7 @@
 }
 
 .desc {
+  font-family: var(--font-onest) !important;
   font-size: clamp(13px, 3vw, 18px) !important;
   font-style: normal;
   font-weight: 400;

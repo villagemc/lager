@@ -24,10 +24,11 @@ export default function SeasonButton({ season, activeId, onSetActiveId, onSetSli
     <Button
       ref={ref}
       size="large"
+      shape="round"
       style={{ animationDelay: `${season.id * 0.15}s` }}
       color={activeId === season.id ? "green" : "default"}
       variant={activeId === season.id ? "filled" : "outlined"}
-      className={inView ? styles.animate_active : styles.animate}
+      className={`${styles.button} ${inView ? styles.animate_active : styles.animate}`}
       onClick={handleCLick}
     >
       {t(season.name)} {season.icon}

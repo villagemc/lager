@@ -93,6 +93,7 @@
 }
 
 .description {
+  font-family: var(--font-onest) !important;
   font-size: clamp(12px, 3vw, 18px);
   color: rgba(var(--black), .6);
   white-space: pre-wrap;

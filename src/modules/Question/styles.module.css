@@ -1,5 +1,5 @@
 .collapse {
-  font-family: var(--font-onest) !important;
+  font-family: Nunito !important;
   font-weight: 800;
   font-size: clamp(16px, 2vw, 18px);
   color: var(--color-green);

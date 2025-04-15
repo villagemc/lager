@@ -19,3 +19,17 @@
 .animate_active {
   animation: animate .2s linear forwards;
 }
+
+.button {
+  font-family: var(--font-nunito);
+  text-align: center;
+  font-size: clamp(12px, 2.5vw, 22px);
+  font-style: normal;
+  font-weight: 700;
+  min-width: clamp(170px, 35vw, 414px);
+  height: clamp(38px, 8vw, 56px);
+}
+
+.button > span {
+  opacity: .8 !important;
+}

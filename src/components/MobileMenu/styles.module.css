@@ -5,3 +5,7 @@
 .modal {
   padding: 0 var(--padding);
 }
+
+.button {
+  height: 31px;
+}

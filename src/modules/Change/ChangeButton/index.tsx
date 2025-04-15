@@ -16,13 +16,14 @@ export default function ChangeButton({ change, activeId, onSetActiveId }: Change
   const { ref, inView } = useInView({ threshold: 0 })
 
   return (
-    <Button 
+    <Button
       ref={ref}
       size="large"
+      shape="round"
       variant={change.id === activeId ? "filled" : "outlined"}
       color={change.id === activeId ? "green" : "default"}
       onClick={() => onSetActiveId(change.id)}
-      className={`${inView ? styles.animate : ''}`}
+      className={`${styles.button} ${inView ? styles.animate : ''}`}
       style={{ animationDuration: inView ? `${change.id * 0.1}s` : '' }}
     >
       {t(change.name)} {change.icon}

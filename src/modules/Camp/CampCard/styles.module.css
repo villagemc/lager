@@ -58,16 +58,18 @@
 }
 
 .title {
+  font-family: var(--font-nunito) !important;
   font-size: clamp(18px, 4.5vw, 32px);
   font-style: normal;
   font-weight: 800;
 }
 
 .subtitle {
-  color: rgba((var(--black)), 0.74);
+  font-family: var(--font-onest) !important;
+  color: rgba(var(--black), 0.74);
   font-size: clamp(12px, 3vw, 18px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .image {

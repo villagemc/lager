@@ -20,6 +20,8 @@ export default function MobileMenu() {
         shape="round"
         variant="solid"
         onClick={onToggle}
+        className={styles.button}
+        style={{ padding: '17px 10px 14px' }}
         icon={(
           <GiHamburgerMenu
             className={styles.menu}
