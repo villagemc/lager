@@ -20,8 +20,8 @@ export default function Language() {
   ), [languages])
 
   return (
-    <Dropdown menu={{ items }} className={styles.dropdown}>
-      <Button className={styles.button} color="default" variant="filled" shape="round" size="large" style={{ padding: '10px 10px' }}>
+    <Dropdown menu={{ items }}>
+      <Button className={styles.dropdown} color="default" variant="filled" shape="round" size="large">
           {language.toUpperCase()}
           <IoIosArrowDown className={styles.button} />
       </Button>

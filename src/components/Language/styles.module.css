@@ -1,4 +1,4 @@
-.button {
+.button, .dropdown {
   height: 56px;
   color: rgba(var(--black), 0.73);
   font-family: var(--font-nunito);
@@ -8,7 +8,11 @@
 }
 
 @media screen and (max-width: 992px) {
-  .button {
+  .button, .dropdown {
     height: 33px;
+  }
+
+  .dropdown {
+    padding: 10px;
   }
 }
