@@ -1,12 +1,12 @@
 @keyframes topBarAnimation {
   0% {
-    transform: translateY(0px);
+    scale: .9;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
   }
   100% {
-    transform: translateY(20px);
+    scale: 1;
     z-index: 1001;
     opacity: 1;
     visibility: visible;
@@ -15,7 +15,7 @@
 
 .header {
   position: fixed;
-  top: 0;
+  top: 20px;
   animation: topBarAnimation .4s ease-out forwards;
 }
 

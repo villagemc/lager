@@ -1,11 +1,11 @@
 @keyframes titleAnimation {
   0% {
-    margin-left: 50px;
+    scale: .9;
     opacity: 0;
     visibility: hidden;
   }
   100% {
-    margin-left: 0px;
+    scale: 1;
     opacity: 1;
     visibility: visible;
   }

@@ -48,37 +48,39 @@ export default function Season() {
           />
         ))}
       </div>
-      <div className={styles.cards}>
-        {SEASONS[activeId - 1].cards.map((card) => (
-          <SeasonCard
-            key={card.id}
-            card={card}
-            slideId={slideId}
-          />
-        ))}
+      <div className={styles.mikro}>
+        <div className={styles.cards}>
+          {SEASONS[activeId - 1].cards.map((card) => (
+            <SeasonCard
+              key={card.id}
+              card={card}
+              slideId={slideId}
+            />
+          ))}
+        </div>
+        <Flex gap={12} className={styles.sliders}>
+          <Button
+            block
+            size="large"
+            color="default"
+            variant="filled"
+            onClick={() => setSlideId(state => state - 1)}
+            disabled={slideId === 0}
+          >
+            <FaArrowLeft />
+          </Button>
+          <Button
+            block
+            size="large"
+            color="default"
+            variant="filled"
+            onClick={() => setSlideId(state => state + 1)}
+            disabled={slideId === SEASONS[activeId - 1].cards.length - 1}
+          >
+            <FaArrowRight />
+          </Button>
+        </Flex>
       </div>
-      <Flex gap={12} className={styles.sliders}>
-        <Button
-          block
-          size="large"
-          color="default"
-          variant="filled"
-          onClick={() => setSlideId(state => state - 1)}
-          disabled={slideId === 0}
-        >
-          <FaArrowLeft />
-        </Button>
-        <Button
-          block
-          size="large"
-          color="default"
-          variant="filled"
-          onClick={() => setSlideId(state => state + 1)}
-          disabled={slideId === SEASONS[activeId - 1].cards.length - 1}
-        >
-          <FaArrowRight />
-        </Button>
-      </Flex>
     </Section>
   )
 }

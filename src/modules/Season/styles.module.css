@@ -2,12 +2,12 @@
   0% {
     opacity: 0;
     visibility: hidden;
-    transform: translateX(50px);
+    scale: .9;
   }
   100% {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0px);
+    scale: 1;
   }
 }
 
@@ -42,22 +42,38 @@
 
 .cards {
   position: relative;
-}
-
-@media screen and (max-width: 992px) {
-  .cards {
-    overflow: hidden;
-    display: flex;
-  }
+  display: flex;
+  gap: 94px;
+  padding: 0 94px;
 }
 
 .sliders {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
+.mikro {
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    gap: 0;
+    padding: 0;
+  }
+
   .sliders {
-    padding: 12px 20px 0;
+    padding: 12px 0 0;
     display: flex;
+  }
+
+  .mikro {
+    margin: 0 40px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mikro {
+    margin: 0 20px;
   }
 }

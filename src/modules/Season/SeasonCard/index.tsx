@@ -22,6 +22,7 @@ export default function SeasonCard({ card, slideId }: SeasonCardProps) {
         src={card.image}
         alt={t('IMAGE_ALT')}
       />
+      <div className={styles.line} />
       <div className={styles.overlay}>
         <div className={styles.disc}>
           <h3 className={styles.title}>{t(card.name)}</h3>
