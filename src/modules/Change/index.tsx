@@ -9,10 +9,9 @@ import ChangeButton from "./ChangeButton"
 import styles from "./styles.module.css"
 import ChangePlan from "./ChangePlan"
 
-const monthId = Math.ceil((new Date().getMonth() + 1) / 3)
-
 export default function Change() {
-  const [activeId, setActiveId] = useState(monthId)
+  // Дефолтное значение времени года
+  const [activeId, setActiveId] = useState(3)
 
   const { t } = useTranslation()
 

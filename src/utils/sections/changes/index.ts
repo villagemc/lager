@@ -41,7 +41,7 @@ export const CHANGES: ChangeStruct[] = [
       },
       {
         id: 6,
-        month: 'MONTH_JULY',
+        month: 'MONTH_AUGUST',
         months: [
           { id: 10, start: '2025-08-03', end: '2025-08-09', price: 119000 },
           { id: 11, start: '2025-08-10', end: '2025-08-16', price: 119000 },
